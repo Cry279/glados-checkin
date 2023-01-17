@@ -16,7 +16,7 @@ def start():
     url= "https://glados.vip/api/user/checkin"
     url2= "https://glados.vip/api/user/status"
     referer = 'https://glados.vip/console/checkin'
-    checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer })
+    checkin = requests.post(url,headers={'cookie': cookie })
     state =  requests.get(url2,headers={'cookie': cookie ,'referer': referer})
    # print(res)
 
